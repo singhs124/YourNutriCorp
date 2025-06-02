@@ -8,4 +8,7 @@ public class FoodApiConfig {
 
     @Value("${usda.ApiKey}")
     public String foodApiKey;
+
+    @Value("${usda.baseUrl}")
+    public String BaseURL;
 }
