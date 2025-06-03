@@ -14,14 +14,11 @@ public class FoodApiService {
     RestTemplate restTemplate = new RestTemplate();
 
     public String getFoodById(String Id){
-        System.out.println("BaseURL:" + foodApiConfig.BaseURL);
-        System.out.println("Api: " + foodApiConfig.foodApiKey);
-        String URL = UriComponentsBuilder.fromHttpUrl(foodApiConfig.BaseURL)
+        String URL = UriComponentsBuilder.fromHttpUrl(foodApiConfig.BaseURL.trim())
                 .path("/fdc/v1/food/{id}")
                 .queryParam("api_key" , foodApiConfig.foodApiKey)
                 .buildAndExpand(Id)
                 .toUriString();
-        System.out.println("URL is: " + URL);
         return restTemplate.getForObject(URL, String.class);
     }
 }
