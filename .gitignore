@@ -3,4 +3,5 @@
 /shelf/
 /workspace.xml
 /src/main/resources/
-/target
+/target/
+target/classes/application.properties
