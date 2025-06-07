@@ -25,6 +25,11 @@ public class FoodApiController {
         return foodApiService.getFoodById(Id);
     }
 
+    @GetMapping("/foodName/{FoodName}/{DataType}")
+    public String getFoodByName(@PathVariable("FoodName") String FoodName, @PathVariable("DataType") String dataType) throws JsonProcessingException{
+        return foodApiService.getFoodByName(FoodName,dataType);
+    }
+
     @GetMapping("/{Input}")
     public String foodCheck(@PathVariable("Input") String Input){
         openAIApiService.filterInput(Input);
