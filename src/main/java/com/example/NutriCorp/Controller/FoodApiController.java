@@ -27,7 +27,8 @@ public class FoodApiController {
 
     @GetMapping("/foodName/{FoodName}/{DataType}")
     public String getFoodByName(@PathVariable("FoodName") String FoodName, @PathVariable("DataType") String dataType) throws JsonProcessingException{
-        return foodApiService.getFoodByName(FoodName,dataType);
+        String foodId =  foodApiService.getFoodByName(FoodName,dataType);
+        return foodApiService.getFoodById(foodId);
     }
 
     @GetMapping("/{Input}")
