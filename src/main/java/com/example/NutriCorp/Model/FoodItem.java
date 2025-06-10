@@ -10,8 +10,8 @@ import org.springframework.boot.autoconfigure.domain.EntityScan;
 @NoArgsConstructor
 @AllArgsConstructor
 public class FoodItem {
-    Float cal;
-    Float fats;
-    Float protein;
-    Float carbs;
+    String cal;
+    String fats;
+    String protein;
+    String carbs;
 }
