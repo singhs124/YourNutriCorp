@@ -1,8 +1,0 @@
-com\example\NutriCorp\Model\FoodItem.class
-com\example\NutriCorp\Controller\FoodItemController.class
-com\example\NutriCorp\Repo\ItemRepo.class
-com\example\NutriCorp\Controller\ApiDemoController.class
-com\example\NutriCorp\NutriCorpApplication.class
-com\example\NutriCorp\config\SecurityConfig.class
-com\example\NutriCorp\Service\FoodItemService.class
-com\example\NutriCorp\Model\ApiDemo.class
